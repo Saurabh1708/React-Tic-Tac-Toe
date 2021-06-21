@@ -180,20 +180,20 @@ class App extends React.Component<myProps,myState> {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="app22Container">
+        <header className="app47Header">
           <h1> Tic-Tac-Toe </h1>
           <h2> Scores</h2>
 
-          <div className="score">
-            <div className="score-item left">A</div>
-            <div className="score-item right">B</div>
-            <div className="score-item left points">{this.state.scoreA}</div>
-            <div className="score-item right points">{this.state.scoreB}</div>
+          <div className="app90Score">
+            <div className="app99ScoreItem app29Left">A</div>
+            <div className="app99ScoreItem app29Right">B</div>
+            <div className="app99ScoreItem app29Left app67Points">{this.state.scoreA}</div>
+            <div className="app99ScoreItem app29Right app67Points">{this.state.scoreB}</div>
           </div>
         </header>
 
-        <div className="table">
+        <div className="app87Table">
           {this.getBoxes()}
         </div>
 

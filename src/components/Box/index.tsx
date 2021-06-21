@@ -1,9 +1,17 @@
 import React from "react";
+// use type
+interface myProps{
+    value: number;
+    count: number;
+    row: number;
+    col: number;
+    onClick: (row: number, col: number)=> void
+}
 
 
-class Box extends React.Component {
+class Box extends React.Component<myProps> {
 
-    constructor(props) {
+    constructor(props: myProps) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
 
@@ -21,7 +29,7 @@ class Box extends React.Component {
     }
 
     render() {
-        let val="";
+        let val:string ="";
         if(this.props.value===0)
         val="O";
         else if(this.props.value===1)

@@ -1,6 +1,6 @@
 import React from "react";
 // use type
-interface myProps{
+type myProps={
     value: number;
     count: number;
     row: number;

@@ -4,13 +4,13 @@ import React from "react";
 import Reset from "../Reset"
 
 
-interface myState{
+type myState= {
   count: number;
   mat: number[][];
   scoreA: number;
   scoreB: number;
 }
-interface myProps{
+type myProps={
 
 }
 
